@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Conversor de Moeda </title>
+    <link rel="stylesheet" href="styles/import.css">
+</head>
+<body>
+    <header class="title">
+        <h1> Converter a Moeda </h1>
+    </header>
+
+    <main class="main-card">
+        <from class="convert-card">
+            <div class="input-group">
+                <label for="amount"> Insira o Valor </label>
+                <input type="number" id="amount" placeholder="Valor em Kwanza">
+            </div>
+
+            <div class="input-group">
+                <label for="amount"> Moeda Convertida </label>
+                <div class="select-wrapper">
+                    <select name="corrency" id="corrency">
+                        <option value="" disabled selected> Selecionar a Moeda </option>
+                        <option value="USS"> Dolar Americano </option>
+                        <option value="EUR"> Euro </option>
+                        <option value="AOA"> Kwanza </option>
+                        <option value="RAND"> Rand </option>
+                        <option value="GBP"> Libra Esterlina </option>
+                        <option value="CAD"> Dolar Canadense </option>
+                        <option value="AUD"> Dolar Australiano </option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-convert">
+                Converter
+            </button>
+        </from>
+    </main>
+    
+</body>
+</html>
