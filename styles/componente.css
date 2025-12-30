@@ -1,0 +1,77 @@
+
+
+/* Formulário Card */
+.convert-card {
+    background-color: var(--card-bg-glass);
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    padding: 30px;
+    width: 380px;
+    max-width: 600px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Grupos de Input */
+.input-group {
+    margin-bottom: 25px;
+}
+
+.input-group label {
+    display: block;
+    font: var(--text-title-lg);
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+input, select {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--input-color-border);
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--text-placeholder);
+    font: var(--text-title-lg);
+    outline: none;
+    appearance: none;
+    transition: border 0.3s;
+}
+
+input::placeholder {
+    color: var(--text-placeholder);
+}
+
+/* Efeito ao focar no input */
+input:focus, select:focus {
+    border-color: var(--title-color);
+    color: var(--text-color);
+}
+
+select {
+    cursor: pointer;
+}
+
+/* Botão */
+.btn-convert {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--btn-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font: var(--text-title-lg);
+    transition: filter 0.2s, transform 0.2s;
+}
+
+.btn-convert:hover {
+    filter: brightness(1.1);
+    transform: scale(1.02);
+}
+
+.btn-convert:active {
+    transform: scale(0.98);
+}

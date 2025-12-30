@@ -1,14 +1,19 @@
 :root {
     --card-bg: #18182d;       /* Azul marinho bem escuro */
+    --card-bg-glass: rgba(255, 255, 255, 0.05); /* Efeito vidro fosco */
     --input-bg: #0f0f1e;      /* Fundo do input (quase preto) */
     --border-color: #2a2a40;  /* Borda sutil */
     --text-placeholder: #52526b;
     --text-color: #e1e1e6;    /* Texto claro para contraste */
+    --title-color: #6a6aff;   /* Azul vibrante para títulos */
+    --input-color-border: aliceblue; /* Borda azul ao focar no input */
+    --btn-color: #6a6aff;      /* Cor do botão */
 
     --font-family: 'Inter', sans-serif;
     --text-description: 14px/150% var(--font-family);
+    --text-title-lg: 16px/150% var(--font-family);
     --text-title-md: 20px/150% var(--font-family);
-    --text-title-bold: 28px/150% var(--font-family);
+    --text-title-bold: bold 32px/150% var(--font-family);
 }
 
 * {
@@ -23,9 +28,33 @@ body {
     color: var(--text-color);
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     padding: 20px;
 
+}
+
+/* Título */
+.header-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    letter-spacing: 1px;
+}
+
+/* Ícone do título
+.header-title .icon-convert{
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--border-color);
+    color: var(--title-color);
+}  */
+
+.header-title h1 {
+    font: var(--text-title-bold);
+    color: var(--title-color);
+    margin-bottom: 20px;
 }
