@@ -1,0 +1,31 @@
+:root {
+    --card-bg: #18182d;       /* Azul marinho bem escuro */
+    --input-bg: #0f0f1e;      /* Fundo do input (quase preto) */
+    --border-color: #2a2a40;  /* Borda sutil */
+    --text-placeholder: #52526b;
+    --text-color: #e1e1e6;    /* Texto claro para contraste */
+
+    --font-family: 'Inter', sans-serif;
+    --text-description: 14px/150% var(--font-family);
+    --text-title-md: 20px/150% var(--font-family);
+    --text-title-bold: 28px/150% var(--font-family);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+body {
+    background-color: var(--border-color);
+    color: var(--text-color);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px;
+
+}
